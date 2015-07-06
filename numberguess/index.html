@@ -15,9 +15,9 @@
   <p>If you parse the value into an integer, you can use both == and === to compare them.  In this case, I would guess === is better because you are comparing two integers, and since it's the same data type, strict comparison is probably better</p>
   
   <h2>What is the difference between == and ===?</h2>
-  <p>== is a loose comparison, allowing for things close in value to be evaluated as equal, like 6 and "6".  === is a strict comparison, where the values must be identical for it to evaluate as true.</p>
+  <p>== is an equal value comparison, allowing for things close in value to be evaluated as equal, like 6 and "6".  === is an equal type and value comparison, where the value and type must be identical for it to evaluate as true.</p>
   
   <h2>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h2>
-  <p></p>
+  <p>In this case, I would say it makes more sense to convert it to an integer.  We are comparing integers, and having the strict comparison of type and value I think would be a better overall practice for this problem.  If we were adding new features, where you could guess for any value, it might be better to leave it as a string and allow for a conditional if it's a number in a string, or just text. In this case however I believe a type/value check is better</p>
 </body>
 </html>
