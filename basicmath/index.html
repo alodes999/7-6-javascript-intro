@@ -1,0 +1,23 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 05</title>
+  <!-- Include your external Javascript file here -->
+  <script type='text/javascript' src='atomic5.js'></script>
+</head>
+<body>
+  <h1>JS Atomic 05</h1>
+  <!-- Answer the questions above here -->
+  <h2>What happens when you try to parse the integer out of a string like "Error 404"? How about "404 Error"? Other combinations of numbers and letters? What needs to be true about the incoming string for it to be parsed correctly?</h2>
+  <p>If a string and integer are entered together, whatever is entered first is what is attempted to be parsed.  If the string is first, it returns NaN, and if the number is first, it parses it into the integer.  </p>
+  
+  <h2>What happens if one (or more) of the inputs are non-numeric text (like a comma or a dollar-sign)? What errors occur, if any? What does the console output tell you?</h2>
+  <p>If other characters are entered in the string, it will stop at those characters. ie, if a $ is entered first, it will stop there, returning NaN.</p>
+  
+  <h2>Why might you use the increment (++) or decrement (--) operators? What are some applications that you predict might come into play?</h2>
+  <p>If you need to count through loops or stop after a certain number, I could see that being a use case for the increment/decremnent operators.  They got some use from me in Ruby, and I could see a few cases here as well.</p>
+  
+  <h2>What questions do you have?</h2>
+  <p>None on this set</p>
+</body>
+</html>
