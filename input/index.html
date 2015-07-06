@@ -1,0 +1,32 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 04</title>
+  <!-- Include your external Javascript file here -->
+  <script type='text/javascript' src='atomic4.js'></script>
+</head>
+<body>
+  <h1>JS Atomic 04</h1>
+  <!-- Answer the questions above here -->
+  <h2>What is the data-type (e.g. string or integer) of the information that comes in? What happens if the user inputs a number -- does it stay an integer? Use typeof and console.log() to help with this.</h2>
+  <p>The data type entered is a string.  A number inputted in this becomes a string when you check the variable value in the console.</p>
+  
+  <h2>What happens if the user clicks "OK" (or equivalent) without typing anything in? What information gets assigned to a variable, if any?</h2>
+  <p>The variable becomse "undefined" and that is what gets put in the alert box as the value for the variable.</p>
+  
+  <h2>How did you choose your variable names? If you gave a list of variable names to someone who hasn't seen your code, could they reasonably predict what information you might store in each?</h2>
+  <p>For my variables, I put the word user in front of each of the variables, ie username, userage.  I do think someone  brand new to the code would be able to deduce what is supposed to go in the variable from the names.</p>
+  
+  <h2>If you completely changed a question you were asking the user, would it make sense to totally rename the variable? What if you changed the order of your questions?</h2>
+  <p>If the question the variable was tied to changed completely, ie userage became "What is your name?", then yes, a change in the variable name would be warranted.  The variable name wouldn't matter in the order of questions as long as the variable name corresponded with the correct question being asked.</p>
+  
+  <h2>In these exercises, we use prompt() to collect information, but most websites do that ask for information do not use prompt() -- how do they collect information (what HTML elements do they use)? What might be an advantage to doing it that way instead of with prompt()? Are there any disadvantages? Why might you use prompt()?</h2>
+  <p>From what we've used, I would say they collect data using input fields in the HTML.  The advantage of doing it that way is you're not waiting for the page to load while the user inputs data, and you're not getting the annoying popup every time the page refreshes.  You might use prompt if you want the user to enter some information to customize the view they receive, but I do think that practice could easily be transferred to feeding data from a login screen, and using the users data to fuel that customization.</p>
+  
+  <h2>Research prompt() -- is there any way to make it so that there are two (or more) fields?</h2>
+  <p>From what I've seen, without using another tool like jQuery or something else, no, there isn't a way to have more than one field in a prompt popup at a time.</p>
+  
+  <h2>What questions do you have?</h2>
+  <p>Should we be doing research ourselves on jQuery and the other JavaScript tools, or will those be covered in a later lecture/day/week?</p>
+</body>
+</html>
