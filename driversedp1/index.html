@@ -9,16 +9,16 @@
   <h1>JS Atomic 06d</h1>
   <!-- Answer the questions above here -->
   <h2>Does it matter what order your if-statements are in?</h2>
-  <p></p>
+  <p>In this case, I don't believe so, because it's returning the alert for whatever statement evaluates true.  Had we had if/else, only the first true option would have been picked</p>
   
   <h2>When testing ranges, did you use &&, ||, or something else entirely (e.g. nested if-statements)? If you used &&, why is that a better choice than || (and vice-versa)?
 </h2>
-  <p></p>
+  <p>I used &&. && tests to see if both values are true before returning true.  It's a better choice because we want both parts of the range to be true, not just one or the other, which is all || needs.</p>
   
   <h2>What types of input produce a value of NaN after parsing? Is it important to check for NaN values? Is it possible for a NaN value to trigger any of the other if-statements? If so, how and why?</h2>
-  <p></p>
+  <p>After parsing, any text entered into the age box would have returned a NaN value.  It would be important to check because if they typed something not a number in, it wouldn't return anything if we didn't have a check for them. I don't believe in this case it would be possible for NaN to trigger any of the other statements, because they are all keyed into integers, which are parse would weed out.</p>
   
   <h2>What questions do you have?</h2>
-  <p></p>
+  <p>Not on this set</p>
 </body>
 </html>
