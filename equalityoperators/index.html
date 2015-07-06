@@ -1,0 +1,36 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06a</title>
+  <!-- Include your external Javascript file here -->
+  <script type='text/javascript' src='atomic6a.js'></script>
+</head>
+<body>
+  <h1>JS Atomic 06a</h1>
+  <!-- Answer the questions above here -->
+  <p>console.log( "5 == '5' is " + (5 == '5') );  //true  The operator is an equals to, but not a strict one, and since strings with numbers can be operated on, integer 5 and string 5 are loosely equal, so it returns true</p>
+  <p>console.log( "5 == 'five' is " + (5 == 'five') );  //false  The same operator returns false here because the word five would not be a string of the number 5, therefore it wouldn't be able to be operated on.</p>
+  <p>console.log( "5 == '6' is " + (5 == '6') );  //false  This operator does try and compare equality between integer and number in a string, but 5 is not equal to 6, so it's false</p>
+  <p>console.log( "5 === '5' is " + (5 === '5') );  //false  This operator is also equals to, but it is a strict equality.  Therefore, an integer of 5 is not the same as a number in a string 5, so it's false</p>
+  <p>console.log( "5 == 2 + 3 is " + (5 == 2 + 3) );  //true  This operator does return true because 2 + 3 is equal to 5.  </p>
+  <p>console.log( "5 == 5 is " + (5 == 5) );  //true  These are the same, so true</p>
+  <p>console.log( "5 === 5 is " + (5 === 5) ); //true  These again, are strictly the same, so even with the 3 ='s it will return true.</p>
+  <p>console.log( "true == 'true' is " + (true == 'true') );  //true</p>
+  <p>true == 'true' was false.  I expected the weak typing of JS to equate the string of true with the boolean, and this did not happen</p>
+  <p>console.log( "true === 'true' is " + (true === 'true') );  //false  Since the loosely equals didn't work with this comparison in the last one, again it didn't work with the strict equals.</p>
+  <p>console.log( "true == false is " + (true == false) );  //false  Both are boolean values, but true and false are by their definitions not equal to each other, so this returns false</p>
+  <p>console.log( "5 == 12 is " + (5 == 12) );  //false  5 is not equals to 12, so this is false</p>
+  <p>console.log( "5 !== 12 is " + (5 != 12) );  //true  5 is not equals to 12, so this returns true</p>
+  <p>console.log( "5 < 12 is " + (5 < 12) );  //true  5 is less than 12, so this returns true</p>
+  <p>console.log( "5 <= 12 is " + (5 <= 12) );  //true  Again here, 5 is less than or equals to 12, so true</p>
+  <p>console.log( "5 > 12 is " + (5 > 12));  //false  5 is not greater than 12, so this returns false</p>
+  <p>console.log( "5 >= 12 is " + (5 >= 12));  //false  Again here, 5 is not greater than or equals to 12, so false</p>
+  
+  <h2>What do you call true and false values?</h2>
+  <p>They are boolean values.</p>
+  
+  <h2>How is true similar or dissimilar from "true"? Can they be used in the same way?</h2>
+  <p>true is a boolean value, "true" is a string.  They cannot be used in the same way, because when you run true == "true", it returns false.</p>
+  
+</body>
+</html>
