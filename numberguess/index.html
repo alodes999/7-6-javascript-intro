@@ -1,0 +1,23 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06c</title>
+  <!-- Include your external Javascript file here -->
+  <script type='text/javascript' src='atomic6c.js'></script>
+</head>
+<body>
+  <h1>JS Atomic 06c</h1>
+  <!-- Answer the questions above here -->
+  <h2>If you collect the user's input as a string (i.e. without using parseInt() to turn it into an integer), does == work to compare the input to the stored secret number? Would === work? Which is best?</h2>
+  <p>Using == would work, because it will "coerce" the value into a number to compare it.  Since we're doing an operation on the number in the string, JS will change it to an integer for that comparison.  If you use a === operator, that checks for strict equality, and that would return false, since a string of a number and the integer of that number are not strictly equal.</p>
+  
+  <h2>If you collect the user's input as an integer (i.e. by using parseInt() to turn it into an integer), can you use == to compare? ===? Which is better in this case?</h2>
+  <p>If you parse the value into an integer, you can use both == and === to compare them.  In this case, I would guess === is better because you are comparing two integers, and since it's the same data type, strict comparison is probably better</p>
+  
+  <h2>What is the difference between == and ===?</h2>
+  <p>== is a loose comparison, allowing for things close in value to be evaluated as equal, like 6 and "6".  === is a strict comparison, where the values must be identical for it to evaluate as true.</p>
+  
+  <h2>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h2>
+  <p></p>
+</body>
+</html>
