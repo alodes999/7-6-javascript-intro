@@ -7,11 +7,11 @@ var side2 = parseInt(userside2, 10);
 var userside3 = prompt("Please enter the third side's length");
 var side3 = parseInt(userside3, 10);
 
-if (side1 === NaN) {
+if (side1 <= 0 == false && side1 > 0 == false) {
   alert("Side 1 wasn't entered as a number");
-} else if (side2 === NaN) {
+} else if (side2 <= 0 == false && side2 > 0 == false) {
   alert("Side 2 wasn't entered as a number");
-} else if (side3 === NaN) {
+} else if (side3 <= 0 == false && side3 > 0 == false) {
   alert("Side 3 wasn't entered as a number");
 } else if ((side1 + side2 > side3) && (side2 + side3 > side1) && (side3 + side1 > side2)) {
   console.log(userside1 + " + " + userside2 + " > " + userside3 + " is " + (side1 + side2 > side3));
